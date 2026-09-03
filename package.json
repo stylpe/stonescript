@@ -16,7 +16,10 @@
 	],
 	"icon": "img/icon.png",
 	"main": "src/extension.js",
+	"browser": "dist/extension.js",
 	"scripts": {
+		"compile": "esbuild src/extension.js --bundle --external:vscode --platform=browser --format=cjs --outfile=dist/extension.js",
+		"vscode:prepublish": "npm run compile"
 	},
 	"categories": [
 		"Programming Languages"
@@ -44,6 +47,7 @@
 		]
 	},
 	"devDependencies": {
+		"esbuild": "^0.25.12"
 	},
 	"__metadata": {
 		"id": "0a8b8e8d-c23c-456f-9b08-f94824116fcc",

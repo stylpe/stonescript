@@ -1,6 +1,4 @@
 const vscode = require('vscode')
-const path = require('path')
-const fs = require('fs')
 
 /**
  * @param {*} document
@@ -8,8 +6,6 @@ const fs = require('fs')
  * @param {*} token
  */
 function provideHover(document, position, token) {
-	const fileName = document.fileName
-	const workDir = path.dirname(fileName)
 	const wordposition = document.getWordRangeAtPosition(position)
 	const word = document.getText(wordposition)
 	const line = document.lineAt(position)
