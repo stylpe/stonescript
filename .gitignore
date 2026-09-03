@@ -1,0 +1,13 @@
+# Dependencies
+node_modules/
+
+# Generated build and package output
+dist/
+*.vsix
+
+# Local editor settings
+.vscode/
+
+# Operating system files
+.DS_Store
+Thumbs.db
