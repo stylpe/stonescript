@@ -1,0 +1,7 @@
+name = "my-worker"
+# Set this to today's date
+compatibility_date = "2026-09-03"
+
+[assets]
+directory = "./"
+not_found_handling = "single-page-application"
